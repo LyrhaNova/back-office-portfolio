@@ -1,0 +1,20 @@
+.png-logo {
+    height: auto; /* Pour garder les proportions */
+    filter: drop-shadow(0 0 15px rgba(204, 21, 204, 0.7));
+    animation: pulse 2s infinite;
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
